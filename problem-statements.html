@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Statements - TECHATHON 2K26</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="kings-logo.png" alt="Kings Engineering College" class="logo-img" onerror="this.style.display='none'">
+                <img src="novanexus-logo.png" alt="Nova Nexus Hub" class="logo-img" onerror="this.style.display='none'">
+                <img src="techathon-logo.png" alt="TECHATHON Logo" class="logo-img" onerror="this.style.display='none'">
+                <span>TECHATHON 2K26</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="problem-statements.html" class="active">Problem Statements</a></li>
+                <li><a href="prizes.html">Prizes</a></li>
+                <li><a href="team.html">Regards</a></li>
+                <li><a href="register.html" class="nav-register-highlight menu-register">Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="register.html" class="mobile-register-btn" id="mobileRegister">Register</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Desktop Suggestion Popup -->
+    <div id="desktopSuggestionPopup" class="desktop-suggestion-popup">
+        <button class="popup-close" id="closePopup">&times;</button>
+        <div class="popup-icon">
+            <i class="fas fa-desktop"></i>
+        </div>
+        <p>View this tab on desktop version for better experience</p>
+    </div>
+
+    <!-- Problem Statements Section -->
+    <section id="problem-statements" class="problem-statements" style="padding-top: 120px; min-height: 100vh;">
+        <div class="container">
+            <h1 class="section-title">Problem Statements</h1>
+            <p class="section-subtitle">Choose from 42 diverse problem statements across multiple domains</p>
+            
+            <!-- Category Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All (42)</button>
+                <button class="filter-btn" data-filter="Environment Management">Environment (8)</button>
+                <button class="filter-btn" data-filter="Smart Automation">Smart Automation (10)</button>
+                <button class="filter-btn" data-filter="Medical">Medical (5)</button>
+                <button class="filter-btn" data-filter="Agriculture">Agriculture (3)</button>
+                <button class="filter-btn" data-filter="Education">Education (4)</button>
+                <button class="filter-btn" data-filter="Renewable / Sustainable Energy">Sustainability (3)</button>
+                <button class="filter-btn" data-filter="Other">Other (9)</button>
+            </div>
+
+            <!-- Problem Statements Table -->
+            <div class="table-responsive">
+                <table class="problem-table">
+                    <thead>
+                        <tr>
+                            <th>PS ID</th>
+                            <th>Problem Statement</th>
+                            <th>Category</th>
+                            <th>Field</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody id="problemTableBody">
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH001</td>
+                            <td class="ps-title">Air Quality Index monitoring system to control Air pollution</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>Air quality is declining due to ineffective pollution control and lack of real-time monitoring.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH002</td>
+                            <td class="ps-title">Effective Biomedical waste Management System</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>An effective biomedical waste management system safely handles medical waste to protect human health and the environment.</td>
+                        </tr>
+                        <tr data-category="Education">
+                            <td class="ps-id">NNH003</td>
+                            <td class="ps-title">Realtime Student Mental health Monitoring Application/chatbot</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Education</span></td>
+                            <td>A real-time student mental health application/chatbot provides immediate emotional support, stress assessment, and guidance to help students manage mental well-being effectively.</td>
+                        </tr>
+                        <tr data-category="Education">
+                            <td class="ps-id">NNH004</td>
+                            <td class="ps-title">Smart Library Management System</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Education</span></td>
+                            <td>A smart library management system automates book tracking, issuing, returning, and user management to improve efficiency and accessibility.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH005</td>
+                            <td class="ps-title">Noise pollution Detection and Control system</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>Noise pollution is rising due to uncontrolled sound sources and lack of real-time monitoring and control.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH006</td>
+                            <td class="ps-title">Smart Disaster management and advisory system</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>A smart disaster management and advisory system provides real-time monitoring, early warnings, and guidance to reduce loss of life and property during disasters.</td>
+                        </tr>
+                        <tr data-category="Agriculture">
+                            <td class="ps-id">NNH007</td>
+                            <td class="ps-title">Crop Root Pressure Imbalance Detector</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Agriculture</span></td>
+                            <td>Uneven underground root pressure damages crops silently, but no physical mechanism exists to detect it early.</td>
+                        </tr>
+                        <tr data-category="Medical">
+                            <td class="ps-id">NNH008</td>
+                            <td class="ps-title">Symptom Silence Detection Algorithm</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Medical</span></td>
+                            <td>Some conditions worsen without symptoms, yet software ignores absence of symptoms as a danger signal.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH009</td>
+                            <td class="ps-title">Ground Stress Accumulation Sensor</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Disaster Management</span></td>
+                            <td>Disasters occur after prolonged underground stress buildup that is not physically measured today.</td>
+                        </tr>
+                        <tr data-category="Renewable / Sustainable Energy">
+                            <td class="ps-id">NNH010</td>
+                            <td class="ps-title">Renewable Instability Forecast Engine</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Renewable / Sustainable Energy</span></td>
+                            <td>Instability builds silently in renewable systems without clear fault indicators.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH011</td>
+                            <td class="ps-title">Road Psychology Adaptive Driving Platform</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Roads influence human behavior, but vehicles do not adapt to this.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH012</td>
+                            <td class="ps-title">Pre-Collapse Ecosystem Intelligence System</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>Nature recovers slowly due to lack of intelligent intervention guidance.</td>
+                        </tr>
+                        <tr data-category="Renewable / Sustainable Energy">
+                            <td class="ps-id">NNH013</td>
+                            <td class="ps-title">Smart Water Leak Detection & Auto-Shutoff System</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Sustainable Energy</span></td>
+                            <td>Detects water leaks in buildings and automatically stops water flow to prevent wastage.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH014</td>
+                            <td class="ps-title">Modular Smart Waste Bin with Fill-Level Indication</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>Monitors garbage level in bins and indicates when they need to be emptied to avoid overflow.</td>
+                        </tr>
+                        <tr data-category="Environment Management">
+                            <td class="ps-id">NNH015</td>
+                            <td class="ps-title">Campus Energy Usage Analytics & Optimization Platform</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Environment Management</span></td>
+                            <td>Analyzes electricity consumption data to identify wastage and suggest energy-saving measures.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH016</td>
+                            <td class="ps-title">Crowd Density Prediction & Queue Optimization System</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Predicts overcrowding in public spaces and helps manage queues efficiently.</td>
+                        </tr>
+                        <tr data-category="Agriculture">
+                            <td class="ps-id">NNH017</td>
+                            <td class="ps-title">Adaptive Smart Irrigation System Based on Usage Patterns</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Agriculture</span></td>
+                            <td>Automatically adjusts irrigation schedules based on actual water usage and soil conditions.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH018</td>
+                            <td class="ps-title">Smart Accident Detection & Emergency Alert System</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Detects vehicle accidents in real time and sends emergency alerts for quick assistance.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH019</td>
+                            <td class="ps-title">Data Privacy and Cybersecurity</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Develop real-time solutions to protect sensitive user data</td>
+                        </tr>
+                        <tr data-category="Medical">
+                            <td class="ps-id">NNH020</td>
+                            <td class="ps-title">Digital Addiction and Mental Health</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Medical</span></td>
+                            <td>Design tools to monitor and reduce digital addiction</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH021</td>
+                            <td class="ps-title">AI Bias and Ethical AI</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Develop mechanisms to detect and eliminate AI bias</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH022</td>
+                            <td class="ps-title">Cybercrime and Online Fraud</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Develop intelligent systems to detect online financial fraud</td>
+                        </tr>
+                        <tr data-category="Renewable / Sustainable Energy">
+                            <td class="ps-id">NNH023</td>
+                            <td class="ps-title">Energy Consumption of Technology</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Renewable / Sustainable Energy</span></td>
+                            <td>Develop energy-efficient solutions for digital infrastructure</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH024</td>
+                            <td class="ps-title">Software Security Vulnerabilities</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Create tools to identify and fix software vulnerabilities</td>
+                        </tr>
+                        <tr data-category="Education">
+                            <td class="ps-id">NNH025</td>
+                            <td class="ps-title">AI-Powered Personalized Tutoring</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Education Technology</span></td>
+                            <td>Uses Artificial Intelligence to analyze a student's learning style, strengths, and weaknesses, and provides customized lessons, practice questions, and feedback.</td>
+                        </tr>
+                        <tr data-category="Medical">
+                            <td class="ps-id">NNH026</td>
+                            <td class="ps-title">Personalized Health Monitoring Apps</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Healthcare Technology</span></td>
+                            <td>Mobile applications that track user health data such as heart rate, sleep, activity, and vitals, and provide personalized health insights and alerts.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH027</td>
+                            <td class="ps-title">Role of Blockchain for Secure Transactions</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">FinTech / Security</span></td>
+                            <td>Uses blockchain technology to ensure secure, transparent, and tamper-proof digital transactions without relying on a central authority.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH028</td>
+                            <td class="ps-title">Cryptocurrency Payment Integration</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Financial Technology</span></td>
+                            <td>Enables businesses or platforms to accept payments using cryptocurrencies like Bitcoin or Ethereum alongside traditional payment methods.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH029</td>
+                            <td class="ps-title">AI-Driven Cybersecurity Incident Response</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Cybersecurity</span></td>
+                            <td>Applies AI to automatically detect, analyze, and respond to cybersecurity threats in real time, reducing response time and human error.</td>
+                        </tr>
+                        <tr data-category="Medical">
+                            <td class="ps-id">NNH030</td>
+                            <td class="ps-title">Smart Wearable System for Early Detection of Abnormal Vital Signs</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Biomedical Engineering</span></td>
+                            <td>Develop a wearable biomedical device that continuously monitors vital parameters such as heart rate, body temperature, and blood oxygen level. The system should analyze real-time data and alert users or caregivers when abnormal patterns are detected.</td>
+                        </tr>
+                        <tr data-category="Education">
+                            <td class="ps-id">NNH031</td>
+                            <td class="ps-title">Smart AI for Cheat Detection</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Education</span></td>
+                            <td>Develop a AI based Solution for to reduce cheats during a online exams and give a cheat free online exams.</td>
+                        </tr>
+                        <tr data-category="Medical">
+                            <td class="ps-id">NNH032</td>
+                            <td class="ps-title">Smart Prescription and medicine Dispenser</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Medical</span></td>
+                            <td>Develop a IoT based Smart Prescription reader and Medicine Providing device.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH033</td>
+                            <td class="ps-title">Smart Road Pothole Detection System</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Smart Vehicle</span></td>
+                            <td>Using sensors or mobile-based detection, this system identifies potholes and reports their location to authorities for maintenance.</td>
+                        </tr>
+                        <tr data-category="Smart Automation">
+                            <td class="ps-id">NNH034</td>
+                            <td class="ps-title">Automated Bus Scheduling and Route Management System for MTC</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>This project automates bus scheduling and route planning using software tools. It supports linked and unlinked duty scheduling, maps routes, and helps optimize resources and service efficiency.</td>
+                        </tr>
+                        <tr data-category="Agriculture">
+                            <td class="ps-id">NNH035</td>
+                            <td class="ps-title">Smart Water Leak Detection and Auto Shut-Off System (Farming)</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Agriculture</span></td>
+                            <td>The system monitors water flow and pressure to detect leak conditions. On detection, it automatically shuts off the supply and alerts users, preventing wastage and damage. It is for farming lands.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH036</td>
+                            <td class="ps-title">Smart Road Pothole Detection System</td>
+                            <td><span class="badge badge-hw-sw">Hardware + Software</span></td>
+                            <td><span class="field-tag">Smart Vehicle</span></td>
+                            <td>Sensors detect road surface anomalies and report locations for maintenance action.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH037</td>
+                            <td class="ps-title">Smart Irrigation System</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Agriculture</span></td>
+                            <td>Design and develop an IoT-based Smart Irrigation System that uses soil moisture sensors and automated pumps to optimize water usage for crops</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH038</td>
+                            <td class="ps-title">Wearable Health Monitor</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Medical</span></td>
+                            <td>Develop a Wearable Health Monitoring Device that continuously tracks vital signs (ECG, SpO2, Temperature) and transmits data to a mobile application for real-time analysis.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH039</td>
+                            <td class="ps-title">Smart Waste Segregation Bin</td>
+                            <td><span class="badge badge-hw">Hardware</span></td>
+                            <td><span class="field-tag">Environmental Management</span></td>
+                            <td>Create a Smart Waste Segregation Bin using image recognition and servo motors to automatically classify waste into biodegradable, recyclable, and hazardous categories</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH040</td>
+                            <td class="ps-title">Driver Drowsiness Detection</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Smart Automation</span></td>
+                            <td>Build an AI-powered Driver Drowsiness Detection System using computer vision and machine learning to alert drivers when fatigue is detected.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH041</td>
+                            <td class="ps-title">Disaster Prediction & Alert App</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Disaster Management</span></td>
+                            <td>Develop a Cloud-based Disaster Prediction & Alert Application that integrates weather and seismic data to provide early warnings and real-time alerts to communities.</td>
+                        </tr>
+                        <tr data-category="Other">
+                            <td class="ps-id">NNH042</td>
+                            <td class="ps-title">Carbon Footprint Tracker</td>
+                            <td><span class="badge badge-sw">Software</span></td>
+                            <td><span class="field-tag">Environmental Management</span></td>
+                            <td>Design a Carbon Footprint Tracker Application that calculates and monitors individual or organizational emissions, with gamified features to encourage sustainable practices</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Register Card -->
+    <div class="mobile-register-wrapper">
+        <div class="container">
+            <a href="register.html" class="mobile-register-card">
+                <div class="mobile-register-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="mobile-register-content">
+                    <h3>Register Now</h3>
+                    <p>Join TECHATHON 2K26 - Limited Slots!</p>
+                </div>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-order-2">
+                    <h3>TECHATHON 2K26</h3>
+                    <p>Organized by Nova Nexus Hub<br>Department of ECE<br>Kings Engineering College</p>
+                </div>
+                <div class="footer-section footer-order-1">
+                    <h3>Sponsored By</h3>
+                    <div class="sponsor-logo">
+                        <a href="https://www.instagram.com/book_my_tee?igsh=MWpzNTFtZmJ6ZTJzZQ==" target="_blank" rel="noopener noreferrer">
+                            <img src="sponsor-logo.png" alt="BMT Sponsor" style="max-width: 150px; margin-top: 10px;" onerror="this.style.display='none'">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section footer-order-3">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="problem-statements.html">Problem Statements</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nova Nexus Hub, Kings Engineering College. All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <a href="https://www.linkedin.com/in/vincentrajr/" target="_blank" rel="noopener noreferrer" style="color: var(--neon-blue); font-weight: 600;">Vincent Raj R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Show desktop suggestion popup on mobile only
+        if (window.innerWidth <= 480) {
+            const popup = document.getElementById('desktopSuggestionPopup');
+            const closeBtn = document.getElementById('closePopup');
+            
+            // Show popup
+            popup.style.display = 'block';
+            
+            // Auto-hide after 3 seconds
+            const autoHideTimer = setTimeout(() => {
+                popup.classList.add('popup-hide');
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 300);
+            }, 3000);
+            
+            // Manual close button
+            closeBtn.addEventListener('click', () => {
+                clearTimeout(autoHideTimer);
+                popup.classList.add('popup-hide');
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 300);
+            });
+        }
+    </script>
+</body>
+</html>

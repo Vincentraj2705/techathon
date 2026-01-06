@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TECHATHON 2K26</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="kings-logo.png" alt="Kings Engineering College" class="logo-img" onerror="this.style.display='none'">
+                <img src="novanexus-logo.png" alt="Nova Nexus Hub" class="logo-img" onerror="this.style.display='none'">
+                <img src="techathon-logo.png" alt="TECHATHON Logo" class="logo-img" onerror="this.style.display='none'">
+                <span>TECHATHON 2K26</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="problem-statements.html">Problem Statements</a></li>
+                <li><a href="prizes.html">Prizes</a></li>
+                <li><a href="team.html">Regards</a></li>
+                <li><a href="register.html" class="active nav-register-highlight menu-register">Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="register.html" class="mobile-register-btn" id="mobileRegister">Register</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="page-section">
+        <div class="container">
+            <h1 class="page-title">Register for TECHATHON 2K26</h1>
+            <p class="page-subtitle">Join us on January 23, 2026 for an incredible innovation challenge!</p>
+            <form id="registrationForm" class="registration-form">
+                    <h2>Team Registration Form</h2>
+                    
+                    <!-- Team Details -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-users"></i> Team Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="teamName">Team Name *</label>
+                            <input type="text" id="teamName" name="teamName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="teamSize">Team Size *</label>
+                            <select id="teamSize" name="teamSize" required>
+                                <option value="">Select team size</option>
+                                <option value="4">4 Members (Required)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problemStatement">Problem Statement *</label>
+                            <select id="problemStatement" name="problemStatement" required>
+                                <option value="">Select a problem statement</option>
+                                <option value="NNH001">NNH001 - Air Quality Index monitoring system</option>
+                                <option value="NNH002">NNH002 - Effective Biomedical waste Management System</option>
+                                <option value="NNH003">NNH003 - Realtime Student Mental health Monitoring</option>
+                                <option value="NNH004">NNH004 - Smart Library Management System</option>
+                                <option value="NNH005">NNH005 - Noise pollution Detection and Control</option>
+                                <option value="NNH006">NNH006 - Smart Disaster management and advisory</option>
+                                <option value="NNH007">NNH007 - Crop Root Pressure Imbalance Detector</option>
+                                <option value="NNH008">NNH008 - Symptom Silence Detection Algorithm</option>
+                                <option value="NNH009">NNH009 - Ground Stress Accumulation Sensor</option>
+                                <option value="NNH010">NNH010 - Renewable Instability Forecast Engine</option>
+                                <option value="NNH011">NNH011 - Road Psychology Adaptive Driving Platform</option>
+                                <option value="NNH012">NNH012 - Pre-Collapse Ecosystem Intelligence System</option>
+                                <option value="NNH013">NNH013 - Smart Water Leak Detection & Auto-Shutoff</option>
+                                <option value="NNH014">NNH014 - Modular Smart Waste Bin with Fill-Level</option>
+                                <option value="NNH015">NNH015 - Campus Energy Usage Analytics</option>
+                                <option value="NNH016">NNH016 - Crowd Density Prediction & Queue Optimization</option>
+                                <option value="NNH017">NNH017 - Adaptive Smart Irrigation System</option>
+                                <option value="NNH018">NNH018 - Smart Accident Detection & Emergency Alert</option>
+                                <option value="NNH019">NNH019 - Data Privacy and Cybersecurity</option>
+                                <option value="NNH020">NNH020 - Digital Addiction and Mental Health</option>
+                                <option value="NNH021">NNH021 - AI Bias and Ethical AI</option>
+                                <option value="NNH022">NNH022 - Cybercrime and Online Fraud</option>
+                                <option value="NNH023">NNH023 - Energy Consumption of Technology</option>
+                                <option value="NNH024">NNH024 - Software Security Vulnerabilities</option>
+                                <option value="NNH025">NNH025 - AI-Powered Personalized Tutoring</option>
+                                <option value="NNH026">NNH026 - Personalized Health Monitoring Apps</option>
+                                <option value="NNH027">NNH027 - Role of Blockchain for Secure Transactions</option>
+                                <option value="NNH028">NNH028 - Cryptocurrency Payment Integration</option>
+                                <option value="NNH029">NNH029 - AI-Driven Cybersecurity Incident Response</option>
+                                <option value="NNH030">NNH030 - Smart Wearable for Early Detection</option>
+                                <option value="NNH031">NNH031 - Smart AI for Cheat Detection</option>
+                                <option value="NNH032">NNH032 - Smart Prescription and medicine Dispenser</option>
+                                <option value="NNH033">NNH033 - Smart Road Pothole Detection System</option>
+                                <option value="NNH034">NNH034 - Automated Bus Scheduling for MTC</option>
+                                <option value="NNH035">NNH035 - Smart Water Leak Detection (Farming)</option>
+                                <option value="NNH036">NNH036 - Smart Road Pothole Detection System</option>
+                                <option value="NNH037">NNH037 - Smart Irrigation System</option>
+                                <option value="NNH038">NNH038 - Wearable Health Monitor</option>
+                                <option value="NNH039">NNH039 - Smart Waste Segregation Bin</option>
+                                <option value="NNH040">NNH040 - Driver Drowsiness Detection</option>
+                                <option value="NNH041">NNH041 - Disaster Prediction & Alert App</option>
+                                <option value="NNH042">NNH042 - Carbon Footprint Tracker</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Team Leader Details -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user-tie"></i> Team Leader Details</h3>
+                        
+                        <div class="form-group">
+                            <label for="leaderName">Full Name *</label>
+                            <input type="text" id="leaderName" name="leaderName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="leaderEmail">Email *</label>
+                            <input type="email" id="leaderEmail" name="leaderEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="leaderPhone">Phone Number (WhatsApp) *</label>
+                            <input type="tel" id="leaderPhone" name="leaderPhone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="leaderDept">Department *</label>
+                            <input type="text" id="leaderDept" name="leaderDept" placeholder="e.g., ECE, CSE, EEE" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="leaderYear">Year of Study *</label>
+                            <select id="leaderYear" name="leaderYear" required>
+                                <option value="">Select year</option>
+                                <option value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                                <option value="4">4th Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Submit -->
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I consent to receive event updates via email and SMS *</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit Registration
+                        </button>
+                    </div>
+
+                    <p class="form-note">* All fields are mandatory. You will receive a confirmation email after successful registration.</p>
+                </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-order-2">
+                    <h3>TECHATHON 2K26</h3>
+                    <p>Organized by Nova Nexus Hub<br>Department of ECE<br>Kings Engineering College</p>
+                </div>
+                <div class="footer-section footer-order-1">
+                    <h3>Sponsored By</h3>
+                    <div class="sponsor-logo">
+                        <a href="https://www.instagram.com/book_my_tee?igsh=MWpzNTFtZmJ6ZTJzZQ==" target="_blank" rel="noopener noreferrer">
+                            <img src="sponsor-logo.png" alt="BMT Sponsor" style="max-width: 150px; margin-top: 10px;" onerror="this.style.display='none'">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section footer-order-3">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="problem-statements.html">Problem Statements</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nova Nexus Hub, Kings Engineering College. All rights reserved.</p>
+                <p class="developer-credit">Designed & Developed by <a href="https://www.linkedin.com/in/vincentrajr/" target="_blank" rel="noopener noreferrer" style="color: var(--neon-blue); font-weight: 600;">Vincent Raj R</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="registration-form.js"></script>
+</body>
+</html>

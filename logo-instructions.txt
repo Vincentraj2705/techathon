@@ -1,0 +1,35 @@
+LOGO PLACEMENT INSTRUCTIONS
+===========================
+
+Please save the following images in the inhack folder with exact filenames:
+
+1. novanexus-logo.png
+   - The Nova Nexus circular logo (the one with circuit board pattern and "N")
+   - This will appear in the navigation bar
+   - Recommended size: 200x200 pixels (transparent background)
+
+2. techathon-logo.png
+   - The TECHATHON 2K26 main logo (the hexagonal one with lightning bolt)
+   - This will appear at the top of the hero section
+   - Recommended size: 600x600 pixels (transparent background)
+
+3. kings-logo.png
+   - The Kings Engineering College logo (shield with text)
+   - This will appear below the title in the hero section
+   - Recommended size: 800x200 pixels (transparent background)
+
+CURRENT STATUS:
+- The website is configured to use these logos
+- Simply save your logo files with these exact names in the same folder as index.html
+- The logos will automatically appear on the website
+- If logos are not found, placeholder text will appear instead
+
+IMAGE FORMATS SUPPORTED:
+- PNG (recommended for transparent background)
+- JPG/JPEG (for non-transparent logos)
+- SVG (best for scaling, if available)
+
+TIPS:
+- Use transparent backgrounds for better appearance
+- Optimize images for web (reduce file size)
+- Test the website after adding logos to ensure proper sizing
